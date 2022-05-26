@@ -9,13 +9,13 @@ Selenium Version 4.1.1
 
 Nunit Alure Reports (1.2.1.1)
 
-Tested on chrome .
+Tested on Chrome Browser.
 
 Support :
 
-Crome , Edge , FireFox. 
+Chrome , Edge , FireFox. 
 
-Solution  devided to  two Projects :
+Solution  devided into  two Projects :
 
 
 cb.automationpractice.pages - For PageObject
