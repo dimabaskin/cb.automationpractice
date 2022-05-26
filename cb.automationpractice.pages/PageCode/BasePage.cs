@@ -16,18 +16,18 @@ namespace cb.automationpractice.pages.PageCode
     public class BasePage
     {
 
-        public IWebDriver driver { get; set; }
+        internal IWebDriver driver { get; set; }
 
-        public WebDriverWait wait { get; set; }
+        internal WebDriverWait wait { get; set; }
 
         //public IWebElement loading => driver.FindElement(By.CssSelector("#loading"));
 
-        public Actions action { get; set; }
+        internal Actions action { get; set; }
 
-        public IJavaScriptExecutor js { get; set; }
+        internal IJavaScriptExecutor js { get; set; }
 
         // constructor
-        public BasePage(IWebDriver driver)
+        internal BasePage(IWebDriver driver)
         {
             this.driver = driver;
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
@@ -37,26 +37,38 @@ namespace cb.automationpractice.pages.PageCode
 
         /* Selenium GUI Controls Operations*/
 
-        public void FillText(IWebElement element, string text)
+        internal void FillText(IWebElement element, string text)
         {
             HightlightElement(element, "lightgreen");
             element.Clear();
             element.SendKeys(text);
         }
 
-        public void Click(IWebElement element)
+        internal void Click(IWebElement element)
         {
             HightlightElement(element, "yellow");
             element.Click();
         }
 
-        public string GetElementText(IWebElement element)
+        internal void SelectItemByText(IWebElement element,string value)
+        {
+            var selectElement = new SelectElement(element);
+            selectElement.SelectByText(value);
+        }
+
+        public void SelectItemByValue(IWebElement element, string value)
+        {
+            var selectElement = new SelectElement(element);
+            selectElement.SelectByValue(value);
+        }
+
+        internal string GetElementText(IWebElement element)
         {
             //HightlightElement(element, "orange");
             return element.Text;
         }
 
-        private void HightlightElement(IWebElement el, string color)
+        internal void HightlightElement(IWebElement el, string color)
         {
             // getting the current style in order to change back
             String originalStyle = el.GetAttribute("style");
@@ -75,56 +87,39 @@ namespace cb.automationpractice.pages.PageCode
 
 
         // mouse roll over function
-        public void MoveToElemnt(IWebElement context)
+        internal void MoveToElemnt(IWebElement context)
         {
             action.MoveToElement(context).Perform();
         }
 
-        /* wait methods*/
-
-        public void Loading()
-        {
-            //var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
-            wait.Until(ExpectedConditions.ElementIsVisible(By.Id("loading")));
-            //wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("#loading")));
-            //wait.Until(ExpectedConditions.ElementIsVisible(By.Id("loading")));
-            //wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.CssSelector("#loading")));
-        }
-
-        public void WaitForElementToBeVisible(string locator)
+        internal void WaitForElementToBeVisible(string locator)
         {
             //wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(locator)));
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator)));
         }
 
         /* Alerts */
-        public void AllertSendText(string text)
+        internal void AllertSendText(string text)
         {
             driver.SwitchTo().Alert().SendKeys(text);
         }
 
-        public void AllertAccept()
+        internal void AllertAccept()
         {
             driver.SwitchTo().Alert().Accept();
         }
 
-        public void AllertCancel()
+        internal void AllertCancel()
         {
             driver.SwitchTo().Alert().Dismiss();
         }
 
         // common validations
 
-        public bool IsPageDisplayed(IWebElement el)
+        internal bool IsDisplayed(IWebElement el)
         {
             return el.Displayed;
         }
 
-        public enum ButtonState
-        {
-            NONE,
-            ADD,
-            REMOVE
-        }
     }
 }

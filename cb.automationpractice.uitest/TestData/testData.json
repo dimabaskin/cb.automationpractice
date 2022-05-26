@@ -1,7 +1,15 @@
 {
-  "LayerCartPage": {
-    "product_added_text": "Product successfully added to your shopping cart",
+  "LayerCartTestData": {
+    "product_added_text": "Product successfully added to your shopping cart"
+  },
+  "SearchTestData": {
     "search_txt": "Printed Chiffon Dress"
+  },
+  "CustomerServiceTestData": {
+    "subject": "Customer service",
+    "email": "test@test.com",
+    "message": "Test Message",
+    "allet_success_message": "Your message has been successfully sent to our team."
 
   }
 }

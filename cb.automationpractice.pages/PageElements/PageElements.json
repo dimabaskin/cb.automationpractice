@@ -7,7 +7,9 @@
       "product_button_Add_to_cart": "//div[@class='button-container']//a[contains(@class,'ajax_add_to_cart_button')]",
       "pruduct_name": "//a[@class='product-name']",
       "search_query_form": "//input[@id='search_query_top']",
-      "search_button_submit": "//button[@type='submit'][@name='submit_search']"
+      "search_button_submit": "//button[@type='submit'][@name='submit_search']",
+      "contact_us_support_link": "//a[@href='http://automationpractice.com/index.php?controller=contact']"
+
     }
   },
   "LayerCartPage": {
@@ -22,12 +24,25 @@
   },
   "SearchResults": {
     "elements_xpath": {
+      "search_container": "//h1[@class='page-heading  product-listing']",
       "product_list_container": "//div[@class='product-container']",
       "product_name": "//a[@class='product-name']",
       "lighter_txt": "//span[@class='lighter']"
     }
+  },
+  "CustomerService": {
+    "elements_xpath": {
+      "contact_form": "//form[@class='contact-form-box']",
+      "select_contact_drpdow_list": "//select[@id='id_contact']",
+      "email_input": "//input[@id='email']",
+      "message_input_txt": "//textarea[@id='message']",
+      "send_submit_btn": "//button[@type='submit'][@id='submitMessage']",
+      "allert_success_message": "//p[@class='alert alert-success']",
+      "allert_error_message": "//div[@class='alert alert-danger']"
+
+
+    }
   }
     
-  }
-
 }
+

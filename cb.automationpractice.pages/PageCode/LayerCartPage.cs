@@ -15,16 +15,16 @@ namespace cb.automationpractice.pages.PageCode
             
         }
 
-        string layer_cart_frame_xpath_locator = Utils.pageElements["LayerCartPage:elements_xpath:layer_cart_frame"];
-        string layer_cart_ok_icon_locator = Utils.pageElements["LayerCartPage:elements_xpath:ok_icon"];
-        string layer_cart_product_text_locator = Utils.pageElements["LayerCartPage:elements_xpath:layer_cart_product_text"];
-        string layer_cart_product_title = Utils.pageElements["LayerCartPage:elements_xpath:cart_product_title"];
-        string layer_cart_product_count_txt_locator = Utils.pageElements["LayerCartPage:elements_xpath:cart_product_quantity_txt"];
+        internal string layer_cart_frame_xpath_locator = Utils.pageElements["LayerCartPage:elements_xpath:layer_cart_frame"];
+        internal string layer_cart_ok_icon_locator = Utils.pageElements["LayerCartPage:elements_xpath:ok_icon"];
+        internal string layer_cart_product_text_locator = Utils.pageElements["LayerCartPage:elements_xpath:layer_cart_product_text"];
+        internal string layer_cart_product_title = Utils.pageElements["LayerCartPage:elements_xpath:cart_product_title"];
+        internal string layer_cart_product_count_txt_locator = Utils.pageElements["LayerCartPage:elements_xpath:cart_product_quantity_txt"];
 
         public bool IsAtPage()
         {
-            WaitForElementToBeVisible(Utils.pageElements["LayerCartPage:elements_xpath:layer_cart_frame"]);
-            return driver.FindElement(By.XPath(layer_cart_frame_xpath_locator)).Displayed;
+            WaitForElementToBeVisible(layer_cart_frame_xpath_locator);
+            return IsDisplayed(driver.FindElement(By.XPath(layer_cart_frame_xpath_locator)));
              
         }
 

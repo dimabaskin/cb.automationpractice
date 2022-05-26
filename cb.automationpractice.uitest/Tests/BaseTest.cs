@@ -37,6 +37,9 @@ namespace cb.automationpractice.uitest.Tests
 
         public HomePage homepage;
         public LayerCartPage layerCartPage;
+        public SearchResultsPage searchResultsPage;
+        public CustomerServicePage customerServicePage;
+        public string SiteURL = ReadConfig.appConfig["SiteURL"];
 
 
         [OneTimeSetUp]
@@ -48,7 +51,7 @@ namespace cb.automationpractice.uitest.Tests
             // checking if browser type is received from command line: if not then fall back from config file
             var browserType = ReadConfig.appConfig["browserType"];
             var PageLoadTimeout = Convert.ToInt32(ReadConfig.appConfig["PageLoadTimeout"]);
-            var SiteURL = ReadConfig.appConfig["SiteURL"];
+            
             switch (browserType)
             {
                 case "chrome":
@@ -75,6 +78,8 @@ namespace cb.automationpractice.uitest.Tests
 
             homepage = new HomePage(Driver);
             layerCartPage = new LayerCartPage(Driver);
+            searchResultsPage = new SearchResultsPage(Driver);
+            customerServicePage = new CustomerServicePage(Driver);
         }
 
         public IWebDriver? GetDriver()

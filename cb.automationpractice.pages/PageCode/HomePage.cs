@@ -22,8 +22,9 @@ namespace cb.automationpractice.pages.PageCode
         internal string product_name_xpath_locator = Utils.pageElements["HomePage:elements_xpath:pruduct_name"];
         internal string search_top_form_xpath_locator = Utils.pageElements["HomePage:elements_xpath:search_query_form"];
         internal string search_button_submit_xpath_locator = Utils.pageElements["HomePage:elements_xpath:search_button_submit"];
+        internal string contact_us_support_link_xpath_locator = Utils.pageElements["HomePage:elements_xpath:contact_us_support_link"];
 
-        
+
 
 
         //search_query_form
@@ -58,6 +59,11 @@ namespace cb.automationpractice.pages.PageCode
         {
             FillText(driver.FindElement(By.XPath(search_top_form_xpath_locator)), search_txt);
             Click(driver.FindElement(By.XPath(search_button_submit_xpath_locator)));
+        }
+
+        public void ClickOnCustomreSupport_ContactUs()
+        {
+            Click(driver.FindElement(By.XPath(contact_us_support_link_xpath_locator)));
         }
     }
 }
