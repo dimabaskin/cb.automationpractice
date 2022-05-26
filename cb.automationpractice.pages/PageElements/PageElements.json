@@ -10,6 +10,7 @@
       "search_button_submit": "//button[@type='submit'][@name='submit_search']",
       "contact_us_support_link": "//a[@href='http://automationpractice.com/index.php?controller=contact']"
 
+
     }
   },
   "LayerCartPage": {

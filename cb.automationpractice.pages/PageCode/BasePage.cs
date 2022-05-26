@@ -20,8 +20,6 @@ namespace cb.automationpractice.pages.PageCode
 
         internal WebDriverWait wait { get; set; }
 
-        //public IWebElement loading => driver.FindElement(By.CssSelector("#loading"));
-
         internal Actions action { get; set; }
 
         internal IJavaScriptExecutor js { get; set; }

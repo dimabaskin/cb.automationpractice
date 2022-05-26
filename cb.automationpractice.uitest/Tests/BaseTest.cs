@@ -18,14 +18,6 @@ using WebDriverManager.DriverConfigs.Impl;
 using cb.automationpractice.pages.Helper;
 using cb.automationpractice.pages.PageCode;
 
-//using WebDriverManager;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-//using Microsoft.Extensions.Configuration;
-
-//using WebDriverManager.DriverConfigs.Impl;
 
 
 
@@ -72,9 +64,7 @@ namespace cb.automationpractice.uitest.Tests
             Driver.Manage().Window.Maximize();
             Driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(PageLoadTimeout);
             Driver.Navigate().GoToUrl(SiteURL);
-            //string ExpectedUrl = Utils.pageElements["loginPage:LoginPageURL"];
-            //Assert.That(Driver.Url, Is.EqualTo(ExpectedUrl), "did not get to the expected url");
-
+            
 
             homepage = new HomePage(Driver);
             layerCartPage = new LayerCartPage(Driver);
