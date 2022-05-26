@@ -1,0 +1,33 @@
+{
+  "HomePage": {
+    "HomePageURL": "http://automationpractice.com/index.php",
+    "elements_xpath": {
+      "product_list": "//ul[@id='homefeatured']",
+      "product_container": "//ul[@id='homefeatured']//div[@class='product-container']",
+      "product_button_Add_to_cart": "//div[@class='button-container']//a[contains(@class,'ajax_add_to_cart_button')]",
+      "pruduct_name": "//a[@class='product-name']",
+      "search_query_form": "//input[@id='search_query_top']",
+      "search_button_submit": "//button[@type='submit'][@name='submit_search']"
+    }
+  },
+  "LayerCartPage": {
+    "elements_xpath": {
+      "layer_cart_frame": "//div[@id='layer_cart']",
+      "layer_cart_product": "//div[contains(@class,'layer_cart_product')]",
+      "layer_cart_product_text": "//div[contains(@class,'layer_cart_product')]/h2",
+      "ok_icon": "//i[@class='icon-ok']",
+      "cart_product_title": "//span[@id='layer_cart_product_title']",
+      "cart_product_quantity_txt": "//span[@class='ajax_cart_product_txt ']"
+    }
+  },
+  "SearchResults": {
+    "elements_xpath": {
+      "product_list_container": "//div[@class='product-container']",
+      "product_name": "//a[@class='product-name']",
+      "lighter_txt": "//span[@class='lighter']"
+    }
+  }
+    
+  }
+
+}

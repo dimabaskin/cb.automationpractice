@@ -1,0 +1,77 @@
+{
+  "uuid": "4f83bc28-6d49-4714-ad05-53ed59795c30-tr-0-1001",
+  "historyId": "cb.automationpractice.uitest.Tests.HomePageTest.T01_Add_Item_to_cart",
+  "fullName": "cb.automationpractice.uitest.Tests.HomePageTest.T01_Add_Item_to_cart",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "16"
+    },
+    {
+      "name": "host",
+      "value": "DMITRIB-P14S"
+    },
+    {
+      "name": "package",
+      "value": "cb.automationpractice.uitest.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "T01_Add_Item_to_cart"
+    },
+    {
+      "name": "testClass",
+      "value": "HomePageTest"
+    },
+    {
+      "name": "severity",
+      "value": "blocker"
+    },
+    {
+      "name": "feature",
+      "value": "login"
+    },
+    {
+      "name": "epic",
+      "value": "Login Page"
+    }
+  ],
+  "links": [],
+  "name": "T01_Add_Item_to_cart",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "T01_Add_Item_to_cart"
+  },
+  "stage": "finished",
+  "description": "login to the app with valid credentials\n",
+  "steps": [
+    {
+      "name": "T01_Add_Item_to_cart",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "12f8196c6e5345f78ec1399b9dea2f78-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1653576093815,
+      "stop": 1653576187394
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1653576093814,
+  "stop": 1653576187398
+}

@@ -1,0 +1,85 @@
+{
+  "uuid": "3b6e47a4-3b2d-40c0-b3a5-0b538dcd21ce-tr-0-1001",
+  "historyId": "cb.automationpractice.uitest.Tests.HomePageTest.T01_Add_Item_to_cart",
+  "fullName": "cb.automationpractice.uitest.Tests.HomePageTest.T01_Add_Item_to_cart",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "16"
+    },
+    {
+      "name": "host",
+      "value": "DMITRIB-P14S"
+    },
+    {
+      "name": "package",
+      "value": "cb.automationpractice.uitest.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "T01_Add_Item_to_cart"
+    },
+    {
+      "name": "testClass",
+      "value": "HomePageTest"
+    },
+    {
+      "name": "severity",
+      "value": "blocker"
+    },
+    {
+      "name": "feature",
+      "value": "login"
+    },
+    {
+      "name": "epic",
+      "value": "Login Page"
+    }
+  ],
+  "links": [],
+  "name": "T01_Add_Item_to_cart",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.FormatException : Input string was not in a correct format.",
+    "trace": "   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)\r\n   at System.Convert.ToInt32(String value)\r\n   at cb.automationpractice.pages.PageCode.LayerCartPage.VerifyProductCount(Int32 ProductCount) in C:\\CB_Source\\cb.automationpractice\\cb.automationpractice.pages\\PageCode\\LayerCartPage.cs:line 48\r\n   at cb.automationpractice.uitest.Tests.HomePageTest.T01_Add_Item_to_cart() in C:\\CB_Source\\cb.automationpractice\\cb.automationpractice.uitest\\Tests\\HomePageTest.cs:line 35"
+  },
+  "stage": "finished",
+  "description": "login to the app with valid credentials\n",
+  "steps": [
+    {
+      "name": "T01_Add_Item_to_cart",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.FormatException : Input string was not in a correct format.",
+        "trace": "   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)\r\n   at System.Convert.ToInt32(String value)\r\n   at cb.automationpractice.pages.PageCode.LayerCartPage.VerifyProductCount(Int32 ProductCount) in C:\\CB_Source\\cb.automationpractice\\cb.automationpractice.pages\\PageCode\\LayerCartPage.cs:line 48\r\n   at cb.automationpractice.uitest.Tests.HomePageTest.T01_Add_Item_to_cart() in C:\\CB_Source\\cb.automationpractice\\cb.automationpractice.uitest\\Tests\\HomePageTest.cs:line 35"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Full page screenshot",
+          "source": "538bb36ded964ab5938e9aadc06ad5d6-attachment",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "df5c42a16e404bdfb1887643748d4d92-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1653574568528,
+      "stop": 1653574682887
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1653574568527,
+  "stop": 1653574682890
+}

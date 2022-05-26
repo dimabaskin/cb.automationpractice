@@ -1,0 +1,85 @@
+{
+  "uuid": "d83c5533-5316-40b5-bb00-32a2c15ab84f-tr-0-1001",
+  "historyId": "cb.automationpractice.uitest.Tests.HomePageTest.T01_Add_Item_to_cart",
+  "fullName": "cb.automationpractice.uitest.Tests.HomePageTest.T01_Add_Item_to_cart",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "16"
+    },
+    {
+      "name": "host",
+      "value": "DMITRIB-P14S"
+    },
+    {
+      "name": "package",
+      "value": "cb.automationpractice.uitest.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "T01_Add_Item_to_cart"
+    },
+    {
+      "name": "testClass",
+      "value": "HomePageTest"
+    },
+    {
+      "name": "severity",
+      "value": "blocker"
+    },
+    {
+      "name": "feature",
+      "value": "login"
+    },
+    {
+      "name": "epic",
+      "value": "Login Page"
+    }
+  ],
+  "links": [],
+  "name": "T01_Add_Item_to_cart",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Home Page Not Displayd or have wrong URL\r\n  Expected: True\r\n  But was:  False\r\n",
+    "trace": "   at cb.automationpractice.uitest.Tests.HomePageTest.T01_Add_Item_to_cart() in C:\\CB_Source\\cb.automationpractice\\cb.automationpractice.uitest\\Tests\\HomePageTest.cs:line 26\r\n"
+  },
+  "stage": "finished",
+  "description": "login to the app with valid credentials\n",
+  "steps": [
+    {
+      "name": "T01_Add_Item_to_cart",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Home Page Not Displayd or have wrong URL\r\n  Expected: True\r\n  But was:  False\r\n",
+        "trace": "   at cb.automationpractice.uitest.Tests.HomePageTest.T01_Add_Item_to_cart() in C:\\CB_Source\\cb.automationpractice\\cb.automationpractice.uitest\\Tests\\HomePageTest.cs:line 26\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Full page screenshot",
+          "source": "f277e62cc0d5424db023ff783ede15d4-attachment",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "3bd98afdab954fc8b4bec57f775cc9c1-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1653562943574,
+      "stop": 1653563266927
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1653562943573,
+  "stop": 1653563266931
+}

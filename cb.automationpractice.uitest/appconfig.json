@@ -1,0 +1,6 @@
+{
+  "SiteURL": "http://automationpractice.com/index.php",
+  "browserType": "chrome",
+  "PageLoadTimeout": 30,
+  "ElemetLoadTimeout" : 20
+}
